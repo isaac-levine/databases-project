@@ -32,14 +32,14 @@ create table person(
     firstName varchar(50) not null,
     lastName varchar(50) not null,
     city varchar(50) not null,
-    state varchar(50) not null
+    state varchar(2) not null
 );
 
 drop table if exists place;
 create table place(
 	place_id int primary key,
     city varchar(50) not null,
-    state varchar(50) not null,
+    state varchar(2) not null,
     capacity int
 );
 
@@ -59,10 +59,25 @@ create table company(
     companyName varchar(50) not null
 );
 
-# example query 1: Someone looking for a potty trained dog under the age of 3. 
+# Example query 1: Someone looking for a potty trained dog under the age of 3. 
 # The person has kids, prefers spaniels, and has a budget of $300.
 select * 
 from animal
 join sponsors on (animal.animal_id = sponsors.animal_id)
 where (kidFriendly = 1) and (breed = "%spaniel%") and ((year(CURRENT_TIMESTAMP) - year(dob)) < 3)
 	and (adoptionPrice is not null and ((adoptionPrice < 300) or (adoptionPrice-sponsors.amount < 300)));
+    
+# Example query 2: A shelter trying to place a cat in Boston. The cat can go to 
+# either a shelter or a person
+select *
+from person
+where (city = "Boston") and (state = "MA");
+select *
+from place
+where (city = "Boston") and (state = "MA")
+	and ((place_id in (select animalHome.place_id
+			from animalHome
+			join place on (animalHome.place_id = place.place_id)
+			group by animalHome.place_id
+            having count(animalHome.animal_id)<place.capacity))
+		or capacity = null);
