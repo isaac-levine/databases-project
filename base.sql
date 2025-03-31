@@ -81,3 +81,12 @@ where (city = "Boston") and (state = "MA")
 			group by animalHome.place_id
             having count(animalHome.animal_id)<place.capacity))
 		or capacity = null);
+        
+# Example query 3: A shelter looking to hire workers in the same city that already 
+# owns a turtle
+select *
+from person
+join animalHome on (person.person_id = animalHome.person_id)
+join animal on (animalHome.animal_id = animal.animal_id)
+where (animal.type = "turtle") and (person.city = "Boston") and (person.state = "MA")
+	and (person.place_id = null);
