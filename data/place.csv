@@ -1,0 +1,21 @@
+place_id,city,state,capacity
+1,Boston,MA,10
+2,Chicago,IL,15
+3,New York,NY,20
+4,Los Angeles,CA,25
+5,Miami,FL,12
+6,San Francisco,CA,18
+7,Austin,TX,14
+8,Seattle,WA,16
+9,Denver,CO,13
+10,Portland,OR,11
+11,Philadelphia,PA,17
+12,Atlanta,GA,19
+13,Houston,TX,22
+14,Phoenix,AZ,20
+15,Dallas,TX,15
+16,San Diego,CA,18
+17,Detroit,MI,12
+18,Minneapolis,MN,14
+19,Nashville,TN,16
+20,Baltimore,MD,13

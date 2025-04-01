@@ -1,0 +1,41 @@
+person_id,place_id,firstName,lastName,city,state
+1,NULL,John,Smith,Boston,MA
+2,NULL,Emma,Johnson,Boston,MA
+3,NULL,Michael,Williams,New York,NY
+4,2,Sarah,Brown,Chicago,IL
+5,NULL,David,Jones,Boston,MA
+6,NULL,Jennifer,Garcia,Los Angeles,CA
+7,1,Robert,Miller,Boston,MA
+8,NULL,Elizabeth,Davis,Boston,MA
+9,NULL,James,Rodriguez,Miami,FL
+10,NULL,Patricia,Martinez,Boston,MA
+11,NULL,Richard,Wilson,Boston,MA
+12,NULL,Linda,Anderson,Chicago,IL
+13,3,Thomas,Taylor,New York,NY
+14,NULL,Barbara,Thomas,Boston,MA
+15,NULL,Charles,Moore,San Francisco,CA
+16,NULL,Susan,Jackson,Boston,MA
+17,4,Joseph,White,Los Angeles,CA
+18,NULL,Margaret,Harris,Boston,MA
+19,NULL,Christopher,Martin,Miami,FL
+20,NULL,Jessica,Thompson,Boston,MA
+21,NULL,Daniel,Lee,Chicago,IL
+22,NULL,Nancy,Walker,Boston,MA
+23,5,Paul,Hall,Miami,FL
+24,NULL,Karen,Allen,Boston,MA
+25,NULL,Mark,Young,New York,NY
+26,NULL,Lisa,King,Boston,MA
+27,NULL,Donald,Wright,Chicago,IL
+28,NULL,Betty,Lopez,Boston,MA
+29,NULL,George,Hill,San Francisco,CA
+30,NULL,Helen,Scott,Boston,MA
+31,NULL,Steven,Green,Miami,FL
+32,NULL,Sandra,Adams,Boston,MA
+33,NULL,Edward,Baker,New York,NY
+34,NULL,Ashley,Gonzalez,Boston,MA
+35,NULL,Brian,Nelson,Chicago,IL
+36,NULL,Kimberly,Carter,Boston,MA
+37,NULL,Ronald,Mitchell,Los Angeles,CA
+38,NULL,Amy,Perez,Boston,MA
+39,NULL,Anthony,Roberts,Miami,FL
+40,NULL,Melissa,Turner,Boston,MA
