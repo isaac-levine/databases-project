@@ -67,8 +67,7 @@ from animal
 join sponsors on (animal.animal_id = sponsors.animal_id);
 
 
-# Modified Query 1: Looking for kid-friendly dogs with breed containing "spaniel" 
-# (removed the age and price constraints that were filtering out matches)
+# Query 1: Looking for kid-friendly dogs with breed containing "spaniel"
 select * 
 from animal
 left join sponsors on (animal.animal_id = sponsors.animal_id)
